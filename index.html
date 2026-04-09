@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Quantitative Analysis · Mathematics · Economics</title>
+  <meta name="description" content="Personal portfolio showcasing expertise in mathematics, economics, game theory, financial modelling, and AI/ML for market analysis.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>∫</text></svg>">
+</head>
+<body>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="bracket">{</span> quant<span class="blink">_</span> <span class="bracket">}</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="models.html" class="nav-link">Models</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-social">
+        <a href="https://linkedin.com/in/alexander-econ-jamieson" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/Prepin210012" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+      <div class="nav-hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="dot"></span>
+            Available for opportunities
+          </div>
+          <h1 class="hero-heading">
+            <span class="line">Where</span>
+            <span class="line"><span class="accent">Mathematics</span></span>
+            <span class="line">Meets Markets</span>
+          </h1>
+          <p class="hero-description">
+            Bridging quantitative rigour with economic intuition — from game-theoretic mechanism design to AI-driven market models and algorithmic strategy.
+          </p>
+          <div class="hero-cta">
+            <a href="about.html" class="btn btn-primary">Explore My Work →</a>
+            <a href="#wasm-demo" class="btn">Live Demo</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-canvas-wrap">
+            <canvas id="hero-canvas"></canvas>
+          </div>
+          <div class="overlay-stats">
+            <div class="stat-row">
+              <span class="stat-label">Sharpe</span>
+              <span class="stat-value">1.847</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Alpha</span>
+              <span class="stat-value">+3.2%</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Max DD</span>
+              <span class="stat-value negative">-8.4%</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Win Rate</span>
+              <span class="stat-value">67.3%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="math-watermark" style="bottom: -5%; left: -3%;">∂</div>
+  </section>
+
+  <!-- ═══ Ticker Strip ═══ -->
+  <div class="ticker-strip">
+    <div class="ticker-track">
+      <span class="ticker-item">MATHEMATICS <span class="up">▲ ∫∂x</span></span>
+      <span class="ticker-item">GAME THEORY <span class="up">▲ Nash EQ</span></span>
+      <span class="ticker-item">MECHANISM DESIGN <span class="up">▲ VCG</span></span>
+      <span class="ticker-item">PYTHON <span class="up">▲ 3.12</span></span>
+      <span class="ticker-item">BLACK-SCHOLES <span class="down">▼ σ=0.2</span></span>
+      <span class="ticker-item">COLLECTIVE WELFARE <span class="up">▲ Pareto</span></span>
+      <span class="ticker-item">MONTE CARLO <span class="up">▲ 100k sims</span></span>
+      <span class="ticker-item">CHESS <span class="up">▲ ELO</span></span>
+      <span class="ticker-item">WASM <span class="up">▲ compiled</span></span>
+      <span class="ticker-item">AI/ML <span class="up">▲ transformer</span></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="ticker-item">MATHEMATICS <span class="up">▲ ∫∂x</span></span>
+      <span class="ticker-item">GAME THEORY <span class="up">▲ Nash EQ</span></span>
+      <span class="ticker-item">MECHANISM DESIGN <span class="up">▲ VCG</span></span>
+      <span class="ticker-item">PYTHON <span class="up">▲ 3.12</span></span>
+      <span class="ticker-item">BLACK-SCHOLES <span class="down">▼ σ=0.2</span></span>
+      <span class="ticker-item">COLLECTIVE WELFARE <span class="up">▲ Pareto</span></span>
+      <span class="ticker-item">MONTE CARLO <span class="up">▲ 100k sims</span></span>
+      <span class="ticker-item">CHESS <span class="up">▲ ELO</span></span>
+      <span class="ticker-item">WASM <span class="up">▲ compiled</span></span>
+      <span class="ticker-item">AI/ML <span class="up">▲ transformer</span></span>
+    </div>
+  </div>
+
+  <!-- ═══ Skills ═══ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Core Competencies</span>
+        <h2 class="section-title">Quantitative Foundations</h2>
+        <p class="section-subtitle">A multidisciplinary toolkit spanning pure mathematics, economic theory, computer science, and applied finance.</p>
+      </div>
+
+      <div class="skills-grid stagger-children" style="margin-top: var(--space-xl);">
+
+        <div class="card skill-card reveal">
+          <div class="skill-icon">∫</div>
+          <h3>Mathematics</h3>
+          <p>Calculus, linear algebra, real analysis, probability theory, and stochastic processes. Building models from first principles.</p>
+        </div>
+
+        <div class="card skill-card reveal">
+          <div class="skill-icon green">λ</div>
+          <h3>Game Theory</h3>
+          <p>Nash equilibria, mechanism design, auction theory, and strategic interaction. Analysing incentive structures in markets and institutions.</p>
+        </div>
+
+        <div class="card skill-card reveal">
+          <div class="skill-icon amber">$</div>
+          <h3>Financial Modelling</h3>
+          <p>Black-Scholes, Monte Carlo methods, portfolio optimisation, and risk quantification. Pricing derivatives and building trading systems.</p>
+        </div>
+
+        <div class="card skill-card reveal">
+          <div class="skill-icon violet">⟨⟩</div>
+          <h3>Computer Science</h3>
+          <p>Data structures, algorithms, Python, JavaScript, WebAssembly. From theory to production-grade systems and API design.</p>
+        </div>
+
+        <div class="card skill-card reveal">
+          <div class="skill-icon">⊕</div>
+          <h3>Economics</h3>
+          <p>Micro and macroeconomic theory, market failures, public goods, externalities, and welfare economics. Policy analysis through a quantitative lens.</p>
+        </div>
+
+        <div class="card skill-card reveal">
+          <div class="skill-icon green">♔</div>
+          <h3>Chess &amp; Strategy</h3>
+          <p>Competitive chess player. Pattern recognition, decision trees under uncertainty, and strategic thinking applied across domains.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Project Carousel ═══ -->
+  <section class="section carousel-section" id="projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Selected Work</span>
+        <h2 class="section-title">Research &amp; Projects</h2>
+        <p class="section-subtitle">Applications of quantitative methods to real-world problems.</p>
+      </div>
+
+      <div class="carousel-wrapper reveal-scale">
+        <div class="carousel-track">
+
+          <div class="carousel-slide">
+            <div class="card">
+              <h3>Monte Carlo Option Pricing Engine</h3>
+              <p>WASM-compiled pricing engine using Geometric Brownian Motion to simulate 50k+ paths for European call/put valuation with real-time Greeks computation.</p>
+              <div class="card-tags">
+                <span class="tag cyan">WASM</span>
+                <span class="tag green">Finance</span>
+                <span class="tag amber">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="card">
+              <h3>Nash Equilibrium Solver</h3>
+              <p>Interactive solver for two-player strategic-form games. Computes pure and mixed-strategy Nash equilibria with Lemke-Howson pivoting.</p>
+              <div class="card-tags">
+                <span class="tag violet">Game Theory</span>
+                <span class="tag cyan">Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="card">
+              <h3>Market Failure Analysis Dashboard</h3>
+              <p>Interactive visualisation of externalities, public goods provision, and deadweight loss. Explores Pigouvian taxation and Coasian bargaining outcomes.</p>
+              <div class="card-tags">
+                <span class="tag green">Economics</span>
+                <span class="tag amber">D3.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="card">
+              <h3>LSTM Market Predictor</h3>
+              <p>Recurrent neural network trained on historical OHLCV data to forecast short-term price movements. Ensemble approach with gradient-boosted features.</p>
+              <div class="card-tags">
+                <span class="tag cyan">AI/ML</span>
+                <span class="tag violet">PyTorch</span>
+                <span class="tag amber">Finance</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="card">
+              <h3>VCG Mechanism Simulator</h3>
+              <p>Implementation of Vickrey-Clarke-Groves auction mechanism with truthful bidding proofs. Explores incentive compatibility and social welfare maximisation.</p>
+              <div class="card-tags">
+                <span class="tag violet">Mechanism Design</span>
+                <span class="tag green">Welfare</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <div class="card">
+              <h3>Distributive Justice Modeller</h3>
+              <p>Computational framework comparing Rawlsian maximin, utilitarian, and egalitarian allocation rules across simulated economies with heterogeneous agents.</p>
+              <div class="card-tags">
+                <span class="tag amber">Ethics</span>
+                <span class="tag cyan">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" aria-label="Previous">←</button>
+          <div class="carousel-dots"></div>
+          <button class="carousel-btn next" aria-label="Next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WASM Demo ═══ -->
+  <section class="section wasm-section" id="wasm-demo">
+    <div class="container">
+      <div class="wasm-grid">
+        <div class="reveal-left">
+          <span class="section-label">Live Computation</span>
+          <h2 class="section-title">WASM Quant Engine</h2>
+          <p class="section-subtitle">Real-time Monte Carlo simulation and option pricing powered by WebAssembly — running natively in your browser.</p>
+          <div class="wasm-actions">
+            <button class="btn btn-primary" id="wasm-run-btn">Run π Estimation</button>
+            <button class="btn" id="wasm-sim-btn">Price Option</button>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <div class="wasm-terminal">
+            <div class="wasm-terminal-header">
+              <div class="dot red"></div>
+              <div class="dot yellow"></div>
+              <div class="dot green"></div>
+              <span>quant_engine — wasm</span>
+            </div>
+            <div class="wasm-terminal-body" id="wasm-output">
+<span class="prompt">$</span> init quant_engine.wasm
+<span class="comment">// Loading WebAssembly binary...</span>
+<span id="wasm-status" class="output">⏳ Initialising...</span>
+<span class="comment">// Press a button to run a computation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-text">© 2026 — Built with mathematics and code</span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="models.html">Models</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://linkedin.com/in/alexander-econ-jamieson" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/wasm-engine.js"></script>
+</body>
+</html>

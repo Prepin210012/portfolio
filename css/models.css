@@ -1,0 +1,206 @@
+/* ═══════════════════════════════════════════════════════════════
+   MODELS PAGE STYLES
+   ═══════════════════════════════════════════════════════════════ */
+
+.models-header {
+  padding-top: calc(var(--nav-height) + var(--space-2xl));
+  padding-bottom: var(--space-xl);
+  position: relative;
+}
+
+/* ── AI Grid ───────────────────────────────────────────────── */
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.ai-card {
+  padding: var(--space-lg);
+}
+
+.ai-card .card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.ai-card .card-header .model-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 2px;
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.ai-card h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.ai-card p {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.ai-card .metric-bar {
+  margin-top: var(--space-md);
+  height: 3px;
+  background: var(--surface);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ai-card .metric-bar .fill {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green));
+  transition: width 1.2s var(--ease-out-expo);
+  width: 0;
+}
+
+.ai-card .metric-bar .fill.animated {
+  width: var(--target-width);
+}
+
+.ai-card .metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ── Pipeline Diagram ──────────────────────────────────────── */
+.pipeline-section {
+  margin-top: var(--space-2xl);
+}
+
+.pipeline-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin-top: var(--space-xl);
+  position: relative;
+}
+
+.pipeline-steps::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-green), var(--accent-amber));
+  opacity: 0.25;
+}
+
+.pipeline-step {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.pipeline-step .step-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-cyan);
+  background: var(--bg-primary);
+  margin: 0 auto 1rem;
+  position: relative;
+}
+
+.pipeline-step .step-dot::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pipeline-step:hover .step-dot::after {
+  opacity: 1;
+}
+
+.pipeline-step h4 {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.pipeline-step p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  padding: 0 0.5rem;
+}
+
+/* ── Tech Stack ────────────────────────────────────────────── */
+.stack-section {
+  margin-top: var(--space-2xl);
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.stack-item {
+  padding: 1.2rem;
+  text-align: center;
+  cursor: default;
+}
+
+.stack-item .stack-icon {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+
+.stack-item h4 {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.stack-item p {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .pipeline-steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+  }
+  .pipeline-steps::before { display: none; }
+  .stack-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .ai-grid { grid-template-columns: 1fr; }
+  .pipeline-steps { grid-template-columns: 1fr; gap: var(--space-lg); }
+  .stack-grid { grid-template-columns: repeat(2, 1fr); }
+}
