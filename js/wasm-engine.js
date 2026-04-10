@@ -12,7 +12,7 @@ class QuantEngine {
   async init() {
     try {
       // Try loading the .wasm binary
-      const response = await fetch('./wasm/quant_engine.wasm');
+      const response = await fetch('/portfolio/wasm/quant_engine.wasm');
       const buffer = await response.arrayBuffer();
       const { instance } = await WebAssembly.instantiate(buffer);
       this.wasmInstance = instance;
